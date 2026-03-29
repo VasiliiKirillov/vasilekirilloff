@@ -369,6 +369,36 @@ p {
   overflow: hidden;
 }
 
+.video-frame-embed {
+  gap: 24px;
+  align-content: stretch;
+}
+
+.video-embed-shell {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: calc(var(--radius-md) - 4px);
+  overflow: hidden;
+  background: #090909;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.video-embed-shell iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-meta {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  justify-items: start;
+}
+
 .video-frame::after {
   content: "";
   position: absolute;
@@ -712,6 +742,10 @@ p {
   .video-frame {
     min-height: 300px;
     padding: 24px;
+  }
+
+  .video-frame-embed {
+    gap: 18px;
   }
 
   .cta-panel {

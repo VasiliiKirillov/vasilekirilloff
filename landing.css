@@ -408,16 +408,6 @@ p {
   pointer-events: none;
 }
 
-.play-badge {
-  display: inline-flex;
-  padding: 8px 12px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.12);
-  color: #ffd9c2;
-  font-size: 0.85rem;
-  font-weight: 700;
-}
-
 .video-frame h3 {
   max-width: 12ch;
   margin-top: 18px;
